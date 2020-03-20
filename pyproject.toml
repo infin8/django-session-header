@@ -10,7 +10,7 @@ include = ["*.rst", "tests/*.py"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
-django = "^2.1"
+django = "^3.0"
 djangorestframework = { version = "^3.9", optional = true }
 
 [tool.poetry.dev-dependencies]
@@ -21,6 +21,7 @@ pytest-cov = "^2.6"
 pylint = "^2.3"
 rope = "^0.14.0"
 pytest-django = "^3.4"
+dephell = "^0.8.2"
 
 [tool.poetry.extras]
 drf = ["djangorestframework"]

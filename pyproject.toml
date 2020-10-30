@@ -9,9 +9,9 @@ repository = "https://github.com/ryanhiebert/django-session-header"
 include = ["*.rst", "tests/*.py"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
-django = "^3.0"
-djangorestframework = { version = "^3.9", optional = true }
+python = ">=3.6"
+django = ">=3.0"
+djangorestframework = { version = ">=3.9", optional = true }
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.3"

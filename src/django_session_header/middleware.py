@@ -20,6 +20,7 @@ class SessionMiddleware(middleware.SessionMiddleware):
         response = supr.process_response(request, response)
         if request.session.session_key:
             response['X-SessionID'] = request.session.session_key
+            response['Access-Control-Expose-Headers'] = 'X-SessionID'
         return response
 
 
